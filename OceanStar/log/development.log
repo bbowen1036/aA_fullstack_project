@@ -1,2 +1,1497 @@
   [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-10-12 15:25:54 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 15:26:35 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 15:29:57 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1271ms (Views: 1270.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2944288732700137830)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20201012223330)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (32.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20201012223330_create_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2944288732700137830)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "OceanStar_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE "OceanStar_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (88.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "OceanStar_development"[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (62.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "OceanStar_test"[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (306.7ms)[0m  [1m[35mCREATE DATABASE "OceanStar_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (110.0ms)[0m  [1m[35mCREATE DATABASE "OceanStar_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (53.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "OceanStar_development"[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (31.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "OceanStar_test"[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (143.9ms)[0m  [1m[35mCREATE DATABASE "OceanStar_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (132.6ms)[0m  [1m[35mCREATE DATABASE "OceanStar_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2944288732700137830)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20201012223330)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20201012223330_create_users.rb:3
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20201012223330_create_users.rb:11
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20201012223330_create_users.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20201012223330_create_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201012223330"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-12 22:39:03.055548"], ["updated_at", "2020-10-12 22:39:03.055548"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2944288732700137830)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-10-12 15:39:32 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 706ms (Views: 705.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 15:51:37 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 178ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/?username=%27Brian%27&email=%27aa@io.com&password=[FILTERED]" for ::1 at 2020-10-12 15:53:22 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"'Brian'", "email"=>"'aa@io.com", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/api/users/?username=%27Brian%27&email=%27aa@io.com&password=[FILTERED]" for ::1 at 2020-10-12 15:57:20 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"'Brian'", "email"=>"'aa@io.com", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/api/users/?username=%27Brian%27&email=%27aa@io.com&password=[FILTERED]" for ::1 at 2020-10-12 15:57:21 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"'Brian'", "email"=>"'aa@io.com", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/api/users/?username=%27Brian%27&email=%27aa@io.com&password=[FILTERED]" for ::1 at 2020-10-12 15:57:22 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"'Brian'", "email"=>"'aa@io.com", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started GET "/" for ::1 at 2020-10-12 15:57:26 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 15:57:27 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/?username=%27Brian%27&email=%27aa@io.com&password=[FILTERED]" for ::1 at 2020-10-12 15:57:46 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"'Brian'", "email"=>"'aa@io.com", "password"=>"[FILTERED]"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "howdy@aol.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (15.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "brian"], ["email", "howdy@aol.com"], ["password_digest", "$2a$12$lCXgnYrigIJjqQM5lsSkx.RmNT/X3UNxoCArZeLy9EUBgeEK1orG6"], ["session_token", "KT_gx0xcF-SrNGOOwTYjVQ"], ["created_at", "2020-10-12 23:01:29.788818"], ["updated_at", "2020-10-12 23:01:29.788818"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "brian"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "howdy@aol.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "rian"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (10.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "rian"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "howdy@aa.io"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "rian"], ["email", "howdy@aa.io"], ["password_digest", "$2a$12$zvoCdZvODsFYZJCDfN2XKu6GMXsr9ezSZo1y6WGbCvbO/cClkqZLy"], ["session_token", "qUZajADEzgRYij2TyE6cyQ"], ["created_at", "2020-10-12 23:05:02.365143"], ["updated_at", "2020-10-12 23:05:02.365143"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "rian"], ["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "howdy@aa.io"], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "riandsds"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "howdy@aa.io"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "riandsds"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "howdy@aa.io"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "riandsds"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "howdy@aa.io"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2020-10-12 16:23:30 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 245ms (Views: 244.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:25:47 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:25:48 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:25:48 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:37:26 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:42:06 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 230ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:43:02 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 241ms (Views: 241.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:43:03 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:55:03 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 215ms (Views: 215.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:58:52 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 16:58:55 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:00:11 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:00:12 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:01:35 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:01:37 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:03:06 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:05:27 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222528323940'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/abe63ab89ad9d915/variables" for ::1 at 2020-10-12 17:05:27 -0700
+Started GET "/" for ::1 at 2020-10-12 17:05:28 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222615559580'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/559880dc6a0b2ab6/variables" for ::1 at 2020-10-12 17:05:28 -0700
+Started GET "/" for ::1 at 2020-10-12 17:06:01 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222610739340'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/e7ee25e2f849809d/variables" for ::1 at 2020-10-12 17:06:01 -0700
+Started GET "/" for ::1 at 2020-10-12 17:06:01 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222615522120'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/77f975bb2a3e0f37/variables" for ::1 at 2020-10-12 17:06:01 -0700
+Started GET "/" for ::1 at 2020-10-12 17:07:47 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222528567160'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/76bd682abf18d251/variables" for ::1 at 2020-10-12 17:07:47 -0700
+Started GET "/" for ::1 at 2020-10-12 17:07:48 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222526128400'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/cb7263e7ded847de/variables" for ::1 at 2020-10-12 17:07:48 -0700
+Started GET "/" for ::1 at 2020-10-12 17:08:22 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:08:23 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:08:27 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222615178760'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/ba90e4f22015b000/variables" for ::1 at 2020-10-12 17:08:27 -0700
+Started GET "/" for ::1 at 2020-10-12 17:08:52 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222528828700'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/8d57f3c433cea0bc/variables" for ::1 at 2020-10-12 17:08:52 -0700
+Started GET "/" for ::1 at 2020-10-12 17:08:53 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222579882900'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/05de94c08653b289/variables" for ::1 at 2020-10-12 17:08:53 -0700
+Started GET "/" for ::1 at 2020-10-12 17:08:54 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222536524820'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/75806e36afc087dd/variables" for ::1 at 2020-10-12 17:08:54 -0700
+Started GET "/" for ::1 at 2020-10-12 17:08:55 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222614947060'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/46429fc08429c0f4/variables" for ::1 at 2020-10-12 17:08:55 -0700
+Started GET "/" for ::1 at 2020-10-12 17:09:15 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222580928060'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/0ac46093eb01ee1e/variables" for ::1 at 2020-10-12 17:09:15 -0700
+Started GET "/" for ::1 at 2020-10-12 17:09:16 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222610933360'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/91bd8e59aea6d856/variables" for ::1 at 2020-10-12 17:09:16 -0700
+Started GET "/" for ::1 at 2020-10-12 17:09:24 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:10:58 -0700
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3021411795333165703_70222614963080'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/f409e48e9f509811/variables" for ::1 at 2020-10-12 17:10:58 -0700
+Started GET "/" for ::1 at 2020-10-12 17:12:20 -0700
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticpagesController#root as HTML
+  Rendering staticpages/root.html.erb within layouts/application
+  Rendered staticpages/root.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269790235000'
+  app/controllers/staticpages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/96ce234d01da77a1/variables" for ::1 at 2020-10-12 17:12:21 -0700
+Started POST "/__better_errors/96ce234d01da77a1/variables" for ::1 at 2020-10-12 17:12:27 -0700
+Started GET "/" for ::1 at 2020-10-12 17:16:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269884839040'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/2512b7e3f31a1080/variables" for ::1 at 2020-10-12 17:16:55 -0700
+Started GET "/" for ::1 at 2020-10-12 17:16:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269789390720'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/06230d50f659b03d/variables" for ::1 at 2020-10-12 17:16:56 -0700
+Started GET "/" for ::1 at 2020-10-12 17:16:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269884886800'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/ecfa9b7c9a43272d/variables" for ::1 at 2020-10-12 17:16:57 -0700
+Started GET "/" for ::1 at 2020-10-12 17:16:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269799325920'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/b208a23c84e62379/variables" for ::1 at 2020-10-12 17:16:58 -0700
+Started GET "/" for ::1 at 2020-10-12 17:16:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269807309440'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/1318ee2b0f95de46/variables" for ::1 at 2020-10-12 17:16:59 -0700
+Started GET "/" for ::1 at 2020-10-12 17:18:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269786845060'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/07fd75db9d8e9583/variables" for ::1 at 2020-10-12 17:18:54 -0700
+Started GET "/" for ::1 at 2020-10-12 17:18:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___2575173354780441888_70269803091080'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/2d159d027354652d/variables" for ::1 at 2020-10-12 17:18:55 -0700
+Started GET "/" for ::1 at 2020-10-12 17:19:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 842ms (Views: 842.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:19:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:19:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:19:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2575173354780441888_70269804210920'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/8fc2eb9522a5d929/variables" for ::1 at 2020-10-12 17:19:45 -0700
+Started GET "/" for ::1 at 2020-10-12 17:19:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:21:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:21:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:21:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:27:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:27:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:32:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 273ms (Views: 272.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:32:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:33:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2575173354780441888_70269699959020'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/4b861c95cdb3cada/variables" for ::1 at 2020-10-12 17:33:55 -0700
+Started GET "/" for ::1 at 2020-10-12 17:34:14 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__4334199758340460670_70164064866200'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/b03c00f85ad8c2c8/variables" for ::1 at 2020-10-12 17:34:14 -0700
+Started GET "/" for ::1 at 2020-10-12 17:35:44 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4394966366611023163_70103103259520'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/b551abdd7b38c4bd/variables" for ::1 at 2020-10-12 17:35:44 -0700
+Started GET "/" for ::1 at 2020-10-12 17:35:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4394966366611023163_70103203363280'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/e468f1a091479e40/variables" for ::1 at 2020-10-12 17:35:47 -0700
+Started GET "/" for ::1 at 2020-10-12 17:35:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/config
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/images
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/javascripts
+  /Users/bb/Desktop/oceanstar/OceanStar/app/assets/stylesheets
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.4/lib/assets/compiled
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.4/app/assets/javascripts
+  /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.4/lib/assets/compiled
+  /Users/bb/Desktop/oceanstar/OceanStar/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4394966366611023163_70103132701920'
+  app/controllers/static_pages_controller.rb:3:in `root'
+
+Started POST "/__better_errors/0f4ab8b4361feed6/variables" for ::1 at 2020-10-12 17:35:58 -0700
+Started GET "/" for ::1 at 2020-10-12 17:41:25 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1477ms (Views: 1477.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 17:41:27 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 14ms (Views: 0.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:43:05 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1228ms (Views: 1227.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 17:43:07 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 23ms (Views: 0.2ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 17:44:17 -0700
+Processing by StaticPagesController#root as */*
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 17:51:28 -0700
+Processing by Api::SessionsController#create as JSON
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/controllers/api/sessions_controller.rb:14:in `create'
+
+Started GET "/" for ::1 at 2020-10-12 17:52:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 305ms (Views: 305.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 17:52:36 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 17:53:14 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 238ms (Views: 0.1ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:03:18 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:03:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:05:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 288ms (Views: 288.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:05:08 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 4ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:08:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 262ms (Views: 261.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:08:15 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 4ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:09:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 250ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:09:59 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:10:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:10:00 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:10:32 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 202ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:12:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 296ms (Views: 295.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:12:03 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:12:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:12:04 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 18:13:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 236ms (Views: 236.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:13:34 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:13:45 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 202ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:13:56 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "email"=>"aa@aol.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 199ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/users" for ::1 at 2020-10-12 18:14:22 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "email"=>"aa@aol.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 404 Not Found in 206ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:14:38 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"brian", "email"=>"aa@aol.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 200ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/api/users" for ::1 at 2020-10-12 18:15:30 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"bdrian", "email"=>"aa@aol.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bdrian"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "bdrian"], ["email", "aa@aol.com"], ["password_digest", "$2a$12$k/sXFvTe2Ya4aEAuK/kibuF50MOk1IMs9CuveQFYGNq4vIAo2SF9."], ["session_token", "UWueL1vJAyyf-wZRg0phMw"], ["created_at", "2020-10-13 01:15:30.210915"], ["updated_at", "2020-10-13 01:15:30.210915"]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "bdrian"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "aa@aol.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "cZD2VFEijY_xXlrpAeVUuQ"], ["updated_at", "2020-10-13 01:15:30.216763"], ["id", 3]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:46
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (0.3ms)
+Completed 200 OK in 221ms (Views: 7.6ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 18:15:45 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"bdrian", "email"=>"aa@aol.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bdrian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "bdrian"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "aa@aol.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Zo_YCFHilDAcmrytrFhPAA"], ["updated_at", "2020-10-13 01:15:45.217589"], ["id", 3]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:46
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (0.3ms)
+Completed 200 OK in 215ms (Views: 5.6ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/sessions" for ::1 at 2020-10-12 20:22:57 -0700
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Zo_YCFHilDAcmrytrFhPAA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "bdrian"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "aa@aol.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:46
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "8tbJxBAu03BnfzMwZXqViQ"], ["updated_at", "2020-10-13 03:22:57.331580"], ["id", 3]]
+  ↳ app/models/user.rb:46
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:46
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 152ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:36:34 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bb/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1062ms (Views: 1062.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:36:36 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 10ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:37:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:37:24 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:37:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 250ms (Views: 250.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:37:47 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:37:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:37:48 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:37:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:37:49 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 13ms (Views: 0.2ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/" for ::1 at 2020-10-12 21:37:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/sessions" for ::1 at 2020-10-12 21:38:01 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Brian", "password"=>"[FILTERED]", "email"=>"user1@aa.io"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brian"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:30
+Completed 404 Not Found in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
